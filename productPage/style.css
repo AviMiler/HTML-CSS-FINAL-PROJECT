@@ -1,0 +1,55 @@
+body {
+  width: 900px;
+  direction: rtl;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . go_back "
+    "pic pic Product_details Product_details"
+    "pic pic Product_details Product_details"
+    "price price . .";
+
+  border: 1px solid blue;
+  height: auto;
+  padding: 5px;
+  margin: 10px;
+  height: 800px;
+}
+
+.header {
+  border: 1px solid blue;
+  grid-area: header;
+  height: 100px;
+  padding: 5px;
+}
+.go_back {
+  width: 50px;
+  height: 20px;
+  border: 1px solid blue;
+}
+.Product_details {
+  grid-area: Product_details;
+  border: 1px solid blue;
+}
+
+.pic {
+  grid-area: pic;
+  border: 1px solid blue;
+}
+
+.price {
+  grid-area: price;
+  border: 1px solid blue;
+  height: 20px;
+}
+
+.footer {
+  border: 1px solid blue;
+}
