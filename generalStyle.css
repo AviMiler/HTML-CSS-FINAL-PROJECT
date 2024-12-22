@@ -1,4 +1,15 @@
-.top-menu{
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    direction: rtl;
+    display: grid;
+    grid-template-areas: "head""main""footer";
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+header{
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -10,7 +21,7 @@
     color: white;
     text-align: center;
 }
-.top-menu p{
+header a{
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -23,3 +34,14 @@
     width: 100%;
     background-color: purple;
 }
+main {
+    justify-items: center;
+    margin-top: 90px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+footer {
+    border: 1px solid black;
+    height: 100px;
+}
+
