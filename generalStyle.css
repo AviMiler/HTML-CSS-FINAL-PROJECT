@@ -1,0 +1,25 @@
+.top-menu{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: rgb(152, 150, 199);
+    color: white;
+    text-align: center;
+}
+.top-menu p{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.top-menu-button{
+    width: 100%;
+    background-color: orangered;
+}
+.picked-top-menu-button{
+    width: 100%;
+    background-color: purple;
+}
