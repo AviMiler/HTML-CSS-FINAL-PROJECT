@@ -1,3 +1,10 @@
+/***    variebles   ***/
+:root{
+    --my-border-radius:10px;
+}
+a{
+    text-decoration: none;
+}
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     direction: rtl;
@@ -20,6 +27,7 @@ header{
     justify-content: space-evenly;
     color: white;
     text-align: center;
+    
 }
 header a{
     color: #FD3A6E;
@@ -28,16 +36,21 @@ header a{
 }
 #top-menu-logo{
     width: 80px;
-    border-radius: 30px;    
+    border-radius: var(--my-border-radius);   
+    background-color: #ABD401;
 }
 .top-menu-button{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     width: 100%;
     background-color: #ABD401;
     font-weight: bold;
     color: #FD547F;
     -webkit-text-stroke: 1.5px white;
-    border-radius: 30px;
+    border-radius: var(--my-border-radius);
     margin: 30px;
+    padding: 10px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -48,17 +61,47 @@ header a{
 main {
     margin-top: 90px;
     padding: 10px;
-    border: 1px solid black;
+    min-height: 900px;
+   
 }
 footer{
-    border: 1px solid black;
     height: 100px;
+    width: 100%;
+    background-color: #f5940d7d;
 }
 
 .product-link{
-    border: 1px solid black;
-    width: 100%;
-    height: 250px;
+    display: grid;
+    grid-template-columns: "img p p";
+    background-color: #FD3A6E;
+    max-width: 250px;
+    max-height: 350px;
     margin: 30px;
+    padding: 10px;
+    justify-items: center;
+    border-radius: var(--my-border-radius);;
 }
+.product-link-image{
+    width: 100%;
+    background-color: white;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--my-border-radius);
+    overflow: hidden;
+    object-fit:scale-down;
+}
+.product-link img{
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.product-link p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+}
+.product-link:hover{
+    background-color:#F5940D;
+}
+
 

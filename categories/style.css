@@ -1,27 +1,44 @@
 main{
     display: grid;
-    grid-template-areas: "side-menu products-window";
-    grid-template-columns: 20% 80%;
+    grid-template-areas: "side-menu nproducts-window";
+    grid-template-columns: 20% 70%;
 }
 .side-menu{
     right: 0px;
-    border: 1px solid black;
-    display: grid;
-    grid-template-areas: "side-menu-button" "side-menu-button""side-menu-button""side-menu-button";
-
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--my-border-radius);
+    background-color: #aad40125;
+    padding:10px;
+    margin: 0px;
 }
 .side-menu-button{
-    border: 1px solid black;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
     background-color: #ABD401;
+    border-radius: var(--my-border-radius);
+    margin: 10px;
     padding: 10px;
-    height: 25%;
+    height: 50px;
     text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.side-menu-button:hover{
+    background-color: #F5940D;
 }
 .products-window{
-    border:1px solid #ABD401;
     width: 100%;
     display: grid;
     grid-template-areas: "product-link product-link product-link product-link";
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     align-content: space-evenly;
     justify-content: space-evenly;
+}
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; /* Stacks items in a single column */
+    }
 }
