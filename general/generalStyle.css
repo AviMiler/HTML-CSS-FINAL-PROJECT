@@ -1,6 +1,13 @@
 /***    variebles   ***/
 :root {
   --my-border-radius: 10px;
+  --my-font: 'MyCustomFont';
+}
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/src/fonts/gan/gan/ganclm_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 a {
   text-decoration: none;
@@ -9,11 +16,11 @@ a {
   box-sizing: border-box;
 }
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #fce41014;
+  font-family: var(--my-font), sans-serif;
   direction: rtl;
   display: flex;
   flex-direction: column;
-  /* max-width: 80%; */
   margin: 0;
   min-height: 100vh;
 }
@@ -51,7 +58,7 @@ header nav {
 }
 header nav a {
   color: #fd3a6e;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
 }
 header nav a:hover {
@@ -72,41 +79,15 @@ header nav a:hover {
   border-radius: var(--my-border-radius);
   padding: 10px;
   margin: 10px;
-  /* margin: 30px;
-  margin-bottom: 0px;
-  margin-top: 0px; */
+
 }
 .top-menu-button:hover {
+  text-decoration: none;
   background-color: #fd547f;
   color: white;
 }
-
-/*
- header {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  top: 0px;
-  right: 0px;
-  width: 100%;
-  min-height: 80px;
-  justify-content: space-evenly;
-  color: white;
-  text-align: center;
-}
-header a {
-  color: #fd3a6e;
-  font-size: 25px;
-  text-decoration: none;
-}
-#top-menu-logo {
-  width: 80px;
-  border-radius: var(--my-border-radius);
-  background-color: #abd401;
-}*/
-
 main {
-  margin-top: 90px;
+  margin-top: 110px;
   padding: 10px;
   min-height: 900px;
 }
@@ -120,9 +101,9 @@ footer {
   display: grid;
   grid-template-columns: "img p p";
   background-color: #fd3a6e;
-  max-width: 250px;
+  max-width: 150px;
   max-height: 350px;
-  margin: 30px;
+  margin: 20px;
   padding: 10px;
   justify-items: center;
   border-radius: var(--my-border-radius);
@@ -155,4 +136,91 @@ footer .container {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+
+@media (max-width: 900px) {
+  header {
+    min-height: 10px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .container-fluid {
+    right: 0px;
+    margin: 0px;
+    width: 100%;
+    padding: 0 16px;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img {
+    height: 50px;
+    border-radius: 50px;
+    background-color: #abd401;
+    margin: 5px;
+  }
+  header nav {
+    display: flex;
+    gap: 0px;
+  }
+  header nav a {
+    color: #fd3a6e;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  header nav a:hover {
+    color: orange;
+    text-decoration: underline;
+  }
+  .top-menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    width: 100px;
+  
+    background-color: #abd401;
+    font-weight: bold;
+    color: #fd547f;
+    -webkit-text-stroke: 1px white;
+    border-radius: var(--my-border-radius);
+    padding: 10px;
+    margin: 5px;
+  
+  }
+  .top-menu-button:hover {
+    text-decoration: none;
+    background-color: #fd547f;
+    color: white;
+  }
+  main {
+    margin-top: 0px;
+    padding: 0px;
+    min-height: 100%;
+  }
+  footer {
+    height: 100px;
+    width: 100%;
+    background-color: #f5940d7d;
+  }
+  
+  .product-link {
+    margin: 10px;
+    padding: 5px;
+  } 
+  .product-link p {
+    font-weight: normal;
+    margin: 0px;
+  }
 }
