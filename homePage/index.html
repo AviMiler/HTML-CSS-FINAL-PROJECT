@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/generalStyle.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>ToyStore</title>
-  </head>
-  <body>
-    <header>
-      <img src="/logo.jpg" id="top-menu-logo" alt="logo" />
-      <a href="\homePage\index.html" class="top-menu-button">בית</a>
-      <a
-        href="\categories\categories.html"
-        class="top-menu-button"
-        id="picked-top-menu-button"
-        >קטגוריות</a
-      >
-      <a href="\contact\contact.html" class="top-menu-button">צור קשר</a>
-    </header>
 
-    <main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/generalStyle.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>ToyStore</title>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="container">
+      <div class="logo">
+        <img src="/logo.jpg" alt="logo" />
+      </div>
+      <nav>
+        <a href="\homePage\index.html" class="top-menu-button">בית</a>
+        <a href="\categories\categories.html" class="top-menu-button" id="picked-top-menu-button">קטגוריות</a>
+        <a href="\contact\contact.html" class="top-menu-button">צור קשר</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+    <div class="container">
       <div class="toy-story">
         <h1>ToyStore</h1>
         <h2>חנות הצעצועים הגדולה בישראל</h2>
@@ -94,9 +98,15 @@
           </a>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="about"><p>אודות</p></div>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="about">
+        אודות
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

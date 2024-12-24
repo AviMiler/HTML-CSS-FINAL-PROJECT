@@ -1,11 +1,11 @@
-.specials{
-    width: 100%;
-    background-color: solid 1px black;
+.specials {
+  width: 100%;
+  background-color: solid 1px black;
 }
-.products-window{
-    width: 100%;
-    display: grid;
-    grid-template-areas: "product-link product-link product-link product-link";
-    align-content: space-evenly;
-    justify-content: space-evenly;
+.products-window {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "product-link product-link product-link product-link";
+  align-content: space-evenly;
+  justify-content: space-evenly;
 }
