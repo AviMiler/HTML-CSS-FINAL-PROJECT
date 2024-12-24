@@ -10,7 +10,7 @@ body {
     direction: rtl;
     display: grid;
     grid-template-areas: "head""main""footer";
-    max-width: 80%px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 20px;
     min-height: 100vh;
