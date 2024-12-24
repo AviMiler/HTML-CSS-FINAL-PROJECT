@@ -1,6 +1,9 @@
-.specials {
-  width: 100%;
-  background-color: solid 1px black;
+.specials{
+    padding: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: #35c0ea50;
+    border-radius: var(--my-border-radius);
 }
 .products-window {
   width: 100%;
@@ -9,3 +12,4 @@
   align-content: space-evenly;
   justify-content: space-evenly;
 }
+
