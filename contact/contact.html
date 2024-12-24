@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="he">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact us</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="\general\generalStyle.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>contact us</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="\general\generalStyle.css" />
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="container">
+      <div class="logo">
+        <img src="\src\logo.jpg" alt="logo" />
+      </div>
+      <nav>
+        <a href="\homePage\index.html" class="top-menu-button">בית</a>
+        <a href="\categories\categories.html" class="top-menu-button" id="picked-top-menu-button">קטגוריות</a>
+        <a href="\contact\contact.html" class="top-menu-button">צור קשר</a>
+      </nav>
+    </div>
+  </header>
 
   <body>
     <header class="container-fluid">
       <div class="container">
         <div class="logo">
-          <img src="\src\logo.jpg" alt="logo" />
+          <img src="/src/logo.jpg" alt="logo" />
         </div>
         <nav>
           <a href="\homePage\index.html" class="top-menu-button">בית</a>
-          <a
-            href="\categories\categories.html"
-            class="top-menu-button"
-            id="picked-top-menu-button"
-            >קטגוריות</a
-          >
+          <a href="\categories\categories.html" class="top-menu-button" id="picked-top-menu-button">קטגוריות</a>
           <a href="\contact\contact.html" class="top-menu-button">צור קשר</a>
         </nav>
       </div>
@@ -34,30 +44,15 @@
           <form>
             <div class="form-group">
               <label for="name">שם:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="הכנס את שמך"
-              />
+              <input type="text" id="name" name="name" placeholder="הכנס את שמך" />
             </div>
             <div class="form-group">
               <label for="email">דוא"ל:</label>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder='הכנס כתובת דוא"ל'
-              />
+              <input type="text" id="email" name="email" placeholder='הכנס כתובת דוא"ל' />
             </div>
             <div class="form-group">
               <label for="phone">טלפון:</label>
-              <input
-                type="text"
-                id="phone"
-                name="phone"
-                placeholder="הכנס מספר טלפון"
-              />
+              <input type="text" id="phone" name="phone" placeholder="הכנס מספר טלפון" />
             </div>
 
             <div class="form-group">
@@ -71,11 +66,7 @@
             </div>
             <div class="form-group">
               <label for="message">הודעה:</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="כתוב את הודעתך"
-              ></textarea>
+              <textarea id="message" name="message" placeholder="כתוב את הודעתך"></textarea>
             </div>
             <button type="submit" class="submit-button">שלח</button>
           </form>
@@ -84,8 +75,10 @@
     </main>
     <footer>
       <div class="container">
-        <div class="about">אודות</div>
+        <img src="\src\c.webp" alt="">
+        <div class="about">כל הזכויות שמורות</div>
       </div>
     </footer>
   </body>
+
 </html>
