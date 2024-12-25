@@ -2,7 +2,12 @@ main {
   /* display: grid;
   grid-template-areas: "side-menu nproducts-window";
   grid-template-columns: 20% 70%; */
+  margin-top: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 main .container {
   display: flex;
 }
@@ -14,9 +19,12 @@ main nav {
   display: flex;
   flex-direction: column;
   /* border-radius: var(--my-border-radius); */
-  background-color: #aad40125;
+  /* background-color: #aad40125; */
   padding: 10px;
-  margin: 0px auto;
+
+  /* margin: 0px auto; */
+  margin-top: 105px;
+
   width: 250px;
   height: 100%;
   position: fixed;
@@ -41,6 +49,14 @@ main nav {
 .subcategory {
   margin-right: 250px;
 }
+section {
+  padding-top: 120px;
+}
+
+main section:first-child {
+  padding-top: 120px;
+}
+
 section h2 {
   text-align: center;
 }
