@@ -25,6 +25,7 @@ body {
   min-height: 100vh;
 }
 header {
+  z-index: 1000;
   min-height: 100px;
   background: rgb(109, 191, 238);
   position: fixed;
@@ -142,7 +143,7 @@ footer .container {
 }
 footer img {
   max-height: 20px;
-
+}
 
 @media (max-width: 900px) {
   header {
@@ -228,5 +229,4 @@ footer img {
     font-weight: normal;
     margin: 0px;
   }
-}
 }
