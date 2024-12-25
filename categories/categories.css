@@ -41,3 +41,25 @@
   font-weight: bold;
   margin: 0;
 }
+@media (max-width: 900px) {
+  .categories-nav {
+    margin-top: 100px;
+  }
+  
+  .categories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+  .category {
+    margin: 10px;
+  }
+  
+  .category img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .category div {
+    font-size: 20px;
+  }
+}

@@ -19,6 +19,12 @@
   align-content: space-evenly;
   justify-content: space-evenly;
 }
+.products-window p{
+    font-family: var(--my-font);
+    color: white;
+    -webkit-text-stroke: 0vw black;
+}
+
 @font-face {
     font-family: 'MyCustomFont';
     src: url('/src/fonts/newyear_goo/Newyear Goo.otf') format('opentype');
@@ -52,6 +58,7 @@
     }
     .specials h2{
         font-size: 6vw;
+        font-family: var(--my-font);
         margin-top: 40px;
         color:#FE306C;
         -webkit-text-stroke: 0.2vw black;

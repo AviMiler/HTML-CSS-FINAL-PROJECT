@@ -2,12 +2,23 @@
 :root {
   --my-border-radius: 10px;
   --my-font: "MyCustomFont";
+  --my-font2: "MyCustomFont2";
 }
 @font-face {
   font-family: "MyCustomFont";
   src: url("/src/fonts/gan/gan/ganclm_bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont2";
+  src: url("/src/fonts/Rubik/Rubik/Rubik-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+#number{
+    font-family: var(--my-font2), sans-serif;
+    color: white;
 }
 a {
   text-decoration: none;
@@ -123,13 +134,13 @@ main {
   margin: 0px;
 }
 .product-link:hover {
-  background-color: #f5940d;
+  background-color: #eea744;
 }
 
 footer {
   height: 100px;
   width: 100%;
-  background-color: #f5940d7d;
+  background-color: #f5b65e;
   display: flex;
   justify-content: center;
   align-items: center;
