@@ -12,12 +12,28 @@
     <header class="container-fluid">
       <div class="container">
         <div class="logo">
-          <img src="\src\logo.jpg" alt="logo" />
+          <img src="/src/logo.jpg" alt="logo" />
         </div>
         <nav>
-          <a href="\homePage\index.html" class="top-menu-button">בית</a>
+          <a href="/homePage/index.html" class="top-menu-button">בית</a>
           <a
-            href="\categories\categories.html"
+            href="/categories/categories.html"
+            class="top-menu-button"
+            id="picked-top-menu-button"
+            >קטגוריות</a
+          >
+          <a href="\contact\contact.html" class="top-menu-button">צור קשר</a>
+        </nav>
+      </div>
+      <div class="alt-menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle">
+          <img src="/src/logo.jpg" alt="תפריט" class="logo" />
+        </label>
+        <nav>
+          <a href="/homePage/index.html" class="top-menu-button">בית</a>
+          <a
+            href="/categories/categories.html"
             class="top-menu-button"
             id="picked-top-menu-button"
             >קטגוריות</a
@@ -30,19 +46,19 @@
     <main class="container-fluid">
       <div class="container">
         <aside class="side-menu">
-          <a href="#pop" class="side-menu-button">
+          <a href="#pop" id="1" class="side-menu-button">
             <p>פופ</p>
           </a>
-          <a href="#barbi" class="side-menu-button">
+          <a href="#barbi" id="2" class="side-menu-button">
             <p>ברבי</p>
           </a>
-          <a href="#disni" class="side-menu-button">
+          <a href="#disni" id="3" class="side-menu-button">
             <p>דיסני</p>
           </a>
-          <a href="#parva" class="side-menu-button">
+          <a href="#parva" id="4" class="side-menu-button">
             <p>פרווה</p>
           </a>
-          <a href="#stefi" class="side-menu-button">
+          <a href="#stefi" id="5" class="side-menu-button">
             <p>סטפי</p>
           </a>
         </aside>

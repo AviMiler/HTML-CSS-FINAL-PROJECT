@@ -25,7 +25,7 @@
 .category img {
   width: 200px;
   height: 200px;
-
+  border: 2px solid #F6890B;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
@@ -38,8 +38,9 @@
 
 .category div {
   font-size: 25px;
-  font-weight: bold;
   margin: 0;
+  color: #F6890B;
+  -webkit-text-stroke: 1px black;
 }
 @media (max-width: 900px) {
   .categories-nav {
@@ -57,9 +58,11 @@
   .category img {
     width: 100px;
     height: 100px;
+    border: 1px solid rgb(173, 20, 20);
   }
   
   .category div {
     font-size: 20px;
+    -webkit-text-stroke: 0.5px black;
   }
 }
